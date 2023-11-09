@@ -63,12 +63,28 @@ public interface QueueADT<E> {
      * @return the size of the queue.
      */
     int size();
-
+     /**
+     * Clears all elements the queue.
+     * 
+     * @post The queue is empty.
+     */ 
     void Clear();
-
-    boolean isFull();
-
-    boolean Equals(QueueADT<E> other);
-
-    void Add(E Element);
+     /**
+     * Checks if the Queue is full.
+     * 
+     * @return True if Queue is full, false otherwise.
+     * @post The fullness of the queue is returned.
+     */ 
+	boolean isFull();
+     /**
+      * Checks if the queue is equal to another queue.
+      *
+      * @param other The other queue.
+      * @return True if the queues are equal, false otherwise.
+      * @throws IllegalArgumentException If the other queue is null.
+      * @post The equality of the queues is returned.
+      */
+	boolean Equals(QueueADT<E> other);
+	
+	void Add(E Element);
 }
