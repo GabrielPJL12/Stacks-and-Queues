@@ -52,6 +52,7 @@ public interface StackADT<E> {
      * @param index the index of the element to be accessed
      * @return the element at the specified position
      * @throws IndexOutOfBoundsException if the index is out of range
+     * @throws NullPointerException      if the element is null
      */
     E access(int index) throws IndexOutOfBoundsException;
 
