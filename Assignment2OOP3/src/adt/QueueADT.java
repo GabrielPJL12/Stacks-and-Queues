@@ -1,5 +1,4 @@
 package adt;
-import java.util.Iterator;
 
 /**
  * Interface for a generic queue data structure.
@@ -62,14 +61,14 @@ public interface QueueADT<E> {
      * returns the size of the queue.
      * 
      * @return the size of the queue.
-     */ 
+     */
     int size();
 
     void Clear();
-	
-	boolean isFull();
-	
-	boolean Equals(QueueADT<E> other);
-	
-	void Add(E Element);
+
+    boolean isFull();
+
+    boolean Equals(QueueADT<E> other);
+
+    void Add(E Element);
 }

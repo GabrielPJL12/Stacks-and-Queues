@@ -1,7 +1,5 @@
 package adt;
 
-import java.util.Iterator;
-
 /**
  * Interface for a generic stack data structure.
  *
