@@ -1,4 +1,5 @@
 package adt;
+
 import java.util.Iterator;
 
 /**
@@ -76,4 +77,12 @@ public interface StackADT<E> {
      * Clears the stack of all elements.
      */
     void clear();
+
+    void Add(E element);
+
+    StackADT<E> New();
+
+    E[] ToArray();
+
+    int Size();
 }

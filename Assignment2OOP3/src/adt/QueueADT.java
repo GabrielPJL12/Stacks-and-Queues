@@ -64,4 +64,12 @@ public interface QueueADT<E> {
      * @return the size of the queue.
      */ 
     int size();
+
+    void Clear();
+	
+	boolean isFull();
+	
+	boolean Equals(QueueADT<E> other);
+	
+	void Add(E Element);
 }
