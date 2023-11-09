@@ -85,6 +85,13 @@ public interface QueueADT<E> {
       * @post The equality of the queues is returned.
       */
 	boolean Equals(QueueADT<E> other);
-	
+     /**
+     * Adds an element to the rear of the queue.
+     *
+     * @param element The element to be added.
+     * @throws IllegalArgumentException If the element is null.
+     * @throws IllegalStateException If the queue is full.
+     * @post The element is added to the rear of the queue.
+     */
 	void Add(E Element);
 }

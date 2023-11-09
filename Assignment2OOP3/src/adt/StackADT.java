@@ -75,12 +75,35 @@ public interface StackADT<E> {
      * Clears the stack of all elements.
      */
     void clear();
-
+    /**
+     * Adds an element to the top of the stack.
+     *
+     * @param element The element to be added.
+     * @throws IllegalArgumentException If the element is null.
+     * @throws IllegalStateException If the stack is full.
+     * @post The element is added to the top of the stack.
+     */
     void Add(E element);
-
+    /**
+     * Creates a new stack.
+     *
+     * @return A new stack.
+     * @post A new stack is created.
+     */
     StackADT<E> New();
-
+    /**
+     * Returns an array containing all of the items in the stack.
+     *
+     * @return An array containing all of the items in the stack.
+     * @throws IllegalStateException If the stack is empty.
+     * @post An array containing all of the items in the stack is returned.
+     */
     E[] ToArray();
-
+    /**
+     * Returns the size of the stack.
+     *
+     * @return The size of the stack.
+     * @post The size of the stack is returned.
+     */
     int Size();
 }
